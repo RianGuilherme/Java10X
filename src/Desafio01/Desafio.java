@@ -11,10 +11,19 @@ public class Desafio {
         * */
 
         String ninja1 = "Naruto Uzumaki";
-        int idadeNinja1 = 16;
+        int idadeNinja1 = 14;
         String missaoNinja1 = "Peitar o Madara";
         char dificuldadeMisaoNinja1 = 'S';
         boolean StatusNinja1 = true;
+
+        if (idadeNinja1 < 15) {
+            if (dificuldadeMisaoNinja1 == 'C' || dificuldadeMisaoNinja1 == 'D') {
+                StatusNinja1 = true;
+            } else {
+                StatusNinja1 = false;
+            }
+        }
+
 
         String ninja2 = "Sasuke Uchiha";
         int idadeNinja2 = 17;
@@ -22,11 +31,27 @@ public class Desafio {
         char dificuldadeMissaoNinja2 = 'A';
         boolean StatusNinja2 = true;
 
+        if (idadeNinja2 <15) {
+            if (dificuldadeMissaoNinja2 == 'C' || dificuldadeMissaoNinja2 == 'D') {
+                StatusNinja2 = true;
+            } else {
+                StatusNinja2 = false;
+            }
+        }
+
         String ninja3 = "Sakura Haruno";
         int idadeNinja3 = 16;
         String missaoNinja3 = "Parar de ser Chata";
         char dificuldadeMissaoNinja3 = 'D';
         boolean StatusNinja3 = false;
+
+        if (idadeNinja3 <15) {
+            if ( dificuldadeMissaoNinja3 == 'C' || dificuldadeMissaoNinja3 == 'D') {
+                StatusNinja3 = true;
+            } else {
+                StatusNinja3 = false;
+            }
+        }
 
         System.out.println("--- REGISTRO DE NINJAS DE KONOHA ---");
         System.out.println(" ");
